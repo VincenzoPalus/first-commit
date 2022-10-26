@@ -1,0 +1,74 @@
+.parent, h1, p{
+    text-align: center;
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    width: auto;
+    }
+
+    .paragrafo
+{
+    background-color: beige;
+    padding: 20px;
+}
+img
+{
+    display: inline-block;
+    text-align: center;
+}
+.sally
+{
+    color: lightgray;
+    text-align: center;
+}
+.featured
+{
+    color: orange;
+    text-align: center;
+    margin-right: 25%;
+}
+.fresh
+{
+    color: rgb(50, 135, 146);
+    text-align: center;
+    margin-right: 17%;
+    text-decoration: underline;
+}
+.ingredienti
+{
+    text-align: center;
+    margin-right: 25%;
+    font-size: 25px;
+}
+h2
+{
+    text-align: center;
+    margin-right: 25%;
+}
+.metodo
+{
+    font-size: 25px;
+    margin-right: 25%;
+}
+ul, li
+{
+    text-align: center;
+    background: #fff;
+    margin: 0px 0;
+    padding: 5px;
+    margin-right: 10%;
+}
+ol
+{
+    margin-right: 20%;
+}
+.footer
+{
+    text-align: center;
+    margin-right: 25%;
+}
+.finale
+{
+    text-align: center;
+    margin-right: 25%;
+}
