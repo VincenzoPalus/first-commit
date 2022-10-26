@@ -52,7 +52,7 @@ h2
 }
 ul, li
 {
-    text-align: center;
+    text-align:right;
     background: #fff;
     margin: 0px 0;
     padding: 5px;
