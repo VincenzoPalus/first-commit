@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a;
+        console.log(a);//undefined
+        a = 5;
+        a = 6;
+        console.log(a);//6
+
+        var x = 1;
+        console.log(x);//1
+        x = 2;
+        console.log(x);//2
+
+        var y = 1, u = 1;//creo due var in una sola riga
+
+        document.write(x + y);
+
+        /* tipi di dato*/
+
+        var numero = 5;//variabile numerica
+        var stringa = 'Ciao';//stringa
+        var array = [1,2,3,'ciao',[]];//array lista di valori
+        var oggetto = {
+            nome: 'Mario',
+            cognome: 'Rossi',
+            anni: 30
+        }
+        var boolrano = true;//o true o false
+
+        console.log(typeof array)
+
+        /*mescoliamo tutto*/a
+        var booleano2 = 'true'//non è un booleano ma una stringa
+        var numero2 = '5';//non è numero ma una stringa
+
+        /*concatenamneto*/
+
+        var saluto = 'Ciao'
+        var nome = 'Marco';
+        //usando l'operatore + su 2 stringhe ottengo un concatenamento
+        console.log(saluto + ' ' + nome)
+
+
+
+
+
+
+        /*parkour*/
+
+        var t = 2;
+        var k = '2';
+        var l = 'sa'
+
+        console.log(t + k)//t viene considerata stringa, quindi avviene un concatenamento
+        console.log(t * k)//k è una stringa contenente solo numeri, javascript è capace di converrtire questa stringa in un numero il risultato sara una moltiplicazione tra numeri
+        console.log(t * l)//non posso moltiplicare 2(number) x '2a'(stringa) e quindi testo
+
+
+
+    </script>
+</body>
+</html>
