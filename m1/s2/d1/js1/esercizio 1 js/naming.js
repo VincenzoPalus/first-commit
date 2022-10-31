@@ -10,7 +10,7 @@ var $pet = 'giraffa';
 console.log($pet);
 var _pet = 'leone';
 console.log(_pet);
-var _pet2 = 'pantera';
+var _pet2 = 'Ghepardo';
 document.write(_pet2);
 
 //var 12 = 'numero';
