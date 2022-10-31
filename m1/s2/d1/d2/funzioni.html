@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        saluta()
+
+        function saluta(){
+            document.write('ciao')
+        }
+
+        function testoBold(){
+            return '<b>Ciao</b>';
+        }
+
+        let saluto = salutoBold();
+        consol.log(saluto);
+        document.write(saluto);
+
+        //funzioni parametriche
+
+        function testoBold(testo){
+            return '<b>${testo}</b>';
+        }
+
+        //operazioni matematiche
+        function somma(a,b){
+            return a + b
+        }
+
+        console.log(somma(4,7))
+
+        function isEven(numero){
+            return numero % 2 == 0
+        }
+
+        console.log( isEven(3))
+
+        
+
+    </script>
+</body>
+</html>

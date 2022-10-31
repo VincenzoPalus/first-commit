@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        {
+            //le metto in un blocco cosi posso utilizzare lo stesso nome sotto
+        let oggetto = {
+
+        }
+        let diavola = {
+            gusto:'Diavola',
+            prezzo:1
+        }
+        let margherita = {
+            gusto:'Margherita',
+            prezzo:5
+        }
+
+    }
+
+        //costruttore dell'oggetto
+        function Pizza(g,p){//g e p sono parametri
+            this.gusto = g
+            this.prezzo = p;
+        }
+
+        let margherita = new Pizza('Margherita',5);
+        let diavola = new Pizza('Diavola',1);
+        console.log(margherita);
+
+        //array
+        console.log([margerita, diavola]);
+
+        //array ordinato
+        console.table([margherita, diavola]);
+
+
+
+    </script>
+    
+</body>
+</html>
