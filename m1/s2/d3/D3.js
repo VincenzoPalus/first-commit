@@ -3,7 +3,15 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function Maggiore(a,b)
+{
+  if(a>b)
+  return a;
+  else if(b>a)
+  return b;
+  else
+  console.log('I due numeri sono uguali');
+}
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
@@ -15,7 +23,8 @@ console.log(5 == 10);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+var divisibile = (5 % 2);
+document.write(divisibile);
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
@@ -49,15 +58,52 @@ document.write(z)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var numeri = [5, 8, 3];
-numeri.sort(function(a, b){return b-a});
-console.log(numeri);
+let z1=6;
+let z2=14;
+let z3=10;
+
+if(z1>=z2)
+    {
+        if(z3>=z1)
+            {
+                console.log(z3,z1,z2);
+            }
+        else  if(z3>=z2)
+              {
+                        console.log(z1,z3,z2);
+                    }
+
+            else 
+                {
+                    console.log(z1,z2,z3);
+                }
+    }
+    else if (z3>=z2)
+        {
+            console.log(z3,z2,z1);
+        }
+        else if(z2>=z1)
+            {
+                console.log(z2,z3,z1);
+            }
+            else
+                {
+                    console.log(z2,z1,z3);
+                }
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(typeof 24);
+let test="ciao";
+if(typeof test === "number")
+    {
+        console.log("è un numero");
+    }
+    else
+        {
+            console.log("non è un numero");
+            }
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -87,7 +133,14 @@ console.log(Dispari(4));//se è false darà pari
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let val = 7
+  if (val < 10) {
+      console.log("Meno di 10");
+    } else if (val > 5) {
+      console.log("Maggiore di 5");
+    } else {
+      console.log("Uguale a 10 o minore");
+    }
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
