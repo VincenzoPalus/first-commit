@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!--Header-->
+<body>
+    <h1>La mia Calcolatrice in JS</h1>
+    <!--Main-->
+    <div class="contenitore">
+       <div class="calcolatrice">
+        <input type="text" id="numeri">
+        <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
+        <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
+        <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
+        <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
+        <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
+        <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
+        <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+        <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
+        <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
+        <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
+        <button data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
+        <button data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
+        <button data-simbolo="*" onclick="aggiungiCifra(this)">x</button>
+        <button data-simbolo="/" onclick="aggiungiCifra(this)">/</button>
+        <button id="reset">C</button>
+        <button onclick="tot()">=</button>
+       </div>
+    </div>
+    <!--Javascript-->
+    <script>
+       let btnClear=document.querySelector('#reset');
+       let inputs=document.querySelectorAll('input');
+
+       btnClear.addEventListener('click',()=> {
+        inputs.forEach(input => input.value ='');
+       });
+      
+
+        function aggiungiCifra(elemento) {
+
+            let cifraCliccata = elemento.getAttribute('data-simbolo');//stringa
+
+            document.getElementById('numeri').value += cifraCliccata;
+
+        }
+
+        function tot(){
+            let numeri = document.getElementById('numeri');
+
+            numeri.value = eval(numeri.value);
+        }
+
+    
+
+
+        function isSymbol1(s){
+            let simboli = ('+','/','*','-');
+            return simboli.includes(s)
+            let btnClear = document.querySelector('button');
+            let inputs = document.querySelectorAll('input');
+    
+            btnClear.addEventListener('click', () => {
+                inputs.forEach(input => input.value = '');
+            });
+        }
+
+        isSymbol('+');
+
+        
+    </script>
+
+</body>
+</html>
