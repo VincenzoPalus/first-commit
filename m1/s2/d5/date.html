@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="time"></div>
+
+    <script>
+    {
+        let now = new Date();
+        let mesi = now.getMonth();//mesi partono da zero
+        let indicaGiorno = now.getDay();//l'indice del giorno della settimana selezionata, partendo da 0 = domenica
+        let giorno = now.getDate();
+        let anno = now.getFullYear();
+        let minuti = now.getMinutes();
+        let ore = now.getHours();
+        let secondi = now.getSeconds();
+        let timestamp = now.getTime();
+        console.log(`${ore}:${minuti}:${secondi}`)
+
+        
+    }
+
+    {
+        let future = new Date();
+        future.setMonth( future.getMonth() + 1);//imposto la data ad un mese da oggi
+        console.log(future)
+    }
+
+    {
+        let data = new Date();
+        let options = {
+            weekday:'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+
+        }
+        console.log(data.toLocaleDateString('it-IT',options))//per mostrare una data 
+        //nel formato del locale (arie geogrfica, fomrati e lingua) scelto
+    }
+       
+
+
+        setInterval(function() {
+
+        let ora = new Date();
+        let minuti = ora.getMinutes();
+        let ore = ora.getHours();
+        let secondi = ora.getSeconds();
+        document.getElementById('time').textContent = `${ore}:${minuti}:${secondi}`;
+
+
+        }, 1000);
+    </script>
+</body>
+</html>

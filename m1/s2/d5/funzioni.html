@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function nomeFunzione(){
+            return 'testo';//la parola chiave return blocca l'esecuzione della funzione.
+        }
+
+        nomeFunzione()
+
+        let testo = 'ciao'//anche se esiste una variabile con lo stesso 
+        //nome di un parametro, non dobbiamo farci confondere. Sono die entità separate.
+
+        function sostituisciVirgola(testo){
+            if(typeof testo == 'string'){
+                let testoconPunti = testo.replaceAll(',','.');
+                return testoconPunti;
+                /*
+                se voglio far si che la mia funziopne estrapoli più valori
+                return {
+                    modificato:testoconPunti,
+                    originale:testo
+                }*/
+            }
+            
+            throw new Error('La funzine sostituisciVirgole() richiede una stringa, hai inserito un dato di tipo :' + typeof testo)
+        }
+
+        console.log(sostituisciVirgola('5,4'));
+
+
+
+        function moltiplica(a = 1,b = 1){
+            return a * b
+        }
+
+        console.log( moltiplica(5,5))
+
+        //usando spread operator
+        function moltiplicaPro(...numeri){
+            let moltiplicazione = 1;
+            for(let numero of numeri){
+                moltiplicazione *= numero;
+            }
+            return moltiplicazione
+            }
+
+            console.log(moltiplicaPro(5,8,9,6,3))
+
+            function moltiplicaProUltra(a,...numeri){
+                return numeri.reduce((c,p) => c * p)
+            }
+
+            console.log(moltiplicaProUltra(5,8,9,6,3))
+
+            //gestione valori mancanti
+
+            function somma(a,b){
+                if( (!a || !b) && (a != 0 && b != 0) )
+                    return 'Err.'
+
+                    return a + b;
+
+                
+            }
+
+            console.log(somma(0,0))
+
+
+            let dato = (function(){//funzione che si auto esegueo
+                console.log('eseguita')
+                return 'ecco il dato';//la variabile dato conterrà questa stringa
+            })()
+
+            console.log(dato)
+
+            //closures
+
+            function aa(){
+                let x = 0;
+                    function bb(){
+                        console.log(x)
+                }
+                bb()
+
+            }
+
+            aa()
+
+            function a(x){
+                return function b(y){
+                    return function c(z){
+                        return x + y + z;
+                    }
+                }
+            }
+
+            let risultato = a(5)(7)(9);
+            console.log(risultato);
+
+            
+            //funzioni freccia
+            const nomefunzioneFreccia = () => 'testo';
+
+            console.log(nomefunzioneFreccia());
+
+
+            const funzioneConParametro = a => a * 2;//con 1 solo parametro posso eliminare le tonde
+            console.log(funzioneConParametro(2));
+
+            const funzioneConParametri = (a,b) => a * b
+;
+
+console.log(funzioneConParametri(2,5));
+console.log(funzioneConParametri(2,5));
+
+const funzioneLunga = () => {
+    let a = 'testo'
+    return a;
+}
+
+console.log(funzioneLunga());
+
+
+
+    </script>
+</body>
+</html>
