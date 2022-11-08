@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" id="cerca">
+    
+    <div id="tendina">
+        <div>Cane</div>
+        <div>Gatto</div>
+        <div>Capra</div>
+        <div>Alpaca</div>
+    </div>
+
+<script>
+
+    let cerca = document.querySelector('#cerca');//seleziona il campo di ricerca
+
+    cerca.addEventListener('keyup', function(){//attivo un event listener sul campo di ricerca, eseguendo una funzione ogni volta che l'utente solleva il dito dopo aver scritto
+
+        let divAnimali = document.querySelectorAll('#tendina > div');//lista di HTMLelements
+        
+        for(let div of divAnimali){//ciclo i div con dentro i nomi degli animali
+            let nomeAnimale = div.textContent.toLowerCase();//salvo il nome dell'animale in una variabile dopo averlo trasformato in caratteri minuscoli
+            if(nomeAnimale.search(cerca.value.toLowerCase()) != -1){//se le parola digitata dall'utente non trova riscontro nel nome dell'animale ho true
+                div.style.display = 'block';//mostro l'animale che potrebbe essere stato nascosto precedentemente
+            }else{
+                div.style.display = 'none';//nasconde l'animale
+            }
+        }
+
+    })
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
