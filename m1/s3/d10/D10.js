@@ -439,7 +439,7 @@ const sfondo = document.getElementById('a').style.backgroundColor = 'red';//USO 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-const nuovoPunto = function (_content) {//DICHIARO LA FUNZIONE
+/*const nuovoPunto = function (_content) {//DICHIARO LA FUNZIONE
   let lista = document.querySelector('#myList');//RICHIAMO L'ID 
   let elementoLista = document.createElement('li');//CREO L'ELEMENTO DENTRO LA LISTA CON IL PROPRIO TAG
   elementoLista.textContent = 'Nuovo ingrediente';//INSERISCO IL NOME CHE SI TROVA ALL'INTERNO DEL TAG
@@ -449,17 +449,18 @@ nuovoPunto();//RICHIAMO LA FUNZIONE
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-function svuotare(){//DICHIARO LA FUNZIONE
+/*function svuotare(){//DICHIARO LA FUNZIONE
  document.getElementById('myList')//RICHIAMO L'ID DELLA LISTA
   $('#myList').empty();//SVUOTO LA LISTA
 }
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-const test = function (){//DICHIARO LA FUNZIONE
+/*const test = function (){//DICHIARO LA FUNZIONE
   document.querySelector('tr').className = 'test';//RICHIAMO IL TR E GLI DO LA CLASSE TEST
    }
    test()//RICHIAMO LA FUNZIONE
+   
    
 // [EXTRA] JS Avanzato
 
