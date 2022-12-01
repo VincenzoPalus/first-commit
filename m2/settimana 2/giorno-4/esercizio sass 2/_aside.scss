@@ -1,0 +1,71 @@
+aside
+{
+
+    ul
+    {
+        display: flex;
+        margin: 0 auto;
+    }
+    li
+    {
+        list-style: none;
+        margin: 0 0 7em;
+        text-align: center;
+    }
+}
+p
+{
+margin: 0 auto;
+width: 50%;
+padding: 20px;
+}
+#titolo
+{
+    font-size: 3rem;
+}
+.titoletto
+{
+    font-size: 2rem;
+}
+.commenti
+{
+    padding-left: 100px;
+    font-family: italic;
+}
+.commento1
+{
+    padding-left: 100px;
+    font-family: italic;
+}
+main
+{
+    display: block;
+    aside
+    {
+        width: 10%;
+        float: right;
+        height: 40vh;
+        border: none;
+        ul
+        {
+            display: block;
+        }
+        li
+        {
+            font-size: 1rem;
+            margin-bottom: 1em;
+            margin-top: 2em;
+            text-decoration: underline;
+        }
+    }
+
+}
+form
+{
+    display: block; 
+    padding-left: 25%
+}
+.container
+{
+    border-left: 1px solid black;
+}

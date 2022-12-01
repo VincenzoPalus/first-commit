@@ -1,0 +1,27 @@
+header
+{
+   
+    background-color: rgb(45, 45, 172);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(241, 194, 106);
+    position: sticky;
+    top: 1.5em;
+    ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+        li
+        {
+            list-style: none;
+
+        }
+            a
+            {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        
+    }
+
+}

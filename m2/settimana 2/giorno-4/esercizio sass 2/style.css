@@ -1,0 +1,109 @@
+header {
+  background-color: rgb(45, 45, 172);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgb(241, 194, 106);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1.5em;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li {
+  list-style: none;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+aside ul {
+  display: flex;
+  margin: 0 auto;
+}
+aside li {
+  list-style: none;
+  margin: 0 0 7em;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+}
+
+#titolo {
+  font-size: 3rem;
+}
+
+.titoletto {
+  font-size: 2rem;
+}
+
+.commenti {
+  padding-left: 100px;
+  font-family: italic;
+}
+
+.commento1 {
+  padding-left: 100px;
+  font-family: italic;
+}
+
+main {
+  display: block;
+}
+main aside {
+  width: 10%;
+  float: right;
+  height: 40vh;
+  border: none;
+}
+main aside ul {
+  display: block;
+}
+main aside li {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-decoration: underline;
+}
+
+form {
+  display: block;
+  padding-left: 25%;
+}
+
+.container {
+  border-left: 1px solid black;
+}
+
+.btn1 {
+  background-color: orange;
+  color: white;
+  border: 0 0 10px black;
+  margin: 10px;
+  padding: 25px;
+  background-size: 200% auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(45, 45, 172);
+  color: white;
+  display: flex;
+}
+
+body {
+  background-color: white;
+  font-family: "Indie Flower", cursive;
+  color: black;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
