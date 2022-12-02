@@ -1,0 +1,88 @@
+@import "partials/variables";
+@import "partials/mixin.scss";
+@import "partials/query";
+
+
+body{
+    
+    font-family: $body-font;
+}
+.navbar{
+    padding: 0;
+    .container-fluid{
+        background-color: $nav_bg;
+        .bianco{
+            color: $a-color;
+        }
+        .rosso{
+            color: $a-red;
+        }
+    }
+    .navbar-brand{
+        color: $a-color;
+    }
+}
+section{
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-position-y: 45%;
+    @include devices(mobile){
+        background-position-y:0%;
+    }
+    
+    background-image:url(img/pexels-aleksandar-pasaric-325185.jpg);
+    height: 400px;
+    @extend%section;
+    h3{
+        font: {
+            size: $h-size;
+        }
+    }
+}
+h2{
+    font-size: $h2-size;
+    font-weight: bold;
+}
+
+.partner{
+    
+    @extend%img;
+    
+    width:80%;
+}
+.slider{
+    width: 20%;
+}
+#a{
+    margin-bottom: 1rem;
+}
+
+
+
+footer{
+   background-color: $foot-bg;
+   color: $foot-color;
+}
+.carousel-item{
+    img{
+
+        border-radius: 50%;
+    }
+}
+.myC{
+    position: relative;
+    padding: 0;
+    background: url(../sfondo/sfondo.svg);
+    background-repeat: no-repeat;
+    .part{
+        background: url(../sfondo/sfondo1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+.rec{
+    background-image: url(../sfondo/sfondo3.svg);
+    background-repeat: no-repeat;
+  
+}

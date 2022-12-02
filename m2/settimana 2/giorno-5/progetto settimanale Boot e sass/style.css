@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap");
+.carousel-item img, .partner {
+  box-shadow: 0 0 10px black;
+}
+.carousel-item img:hover, .partner:hover {
+  transform: scale(1.1);
+}
+
+section {
+  padding: 0.5rem;
+}
+
+body {
+  font-family: Open Sans;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar .container-fluid {
+  background-color: #6600ff;
+}
+.navbar .container-fluid .bianco {
+  color: white;
+}
+.navbar .container-fluid .rosso {
+  color: rgb(255, 98, 0);
+}
+.navbar .navbar-brand {
+  color: white;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
+  background-image: url(img/pexels-aleksandar-pasaric-325185.jpg);
+  height: 400px;
+}
+@media screen and (max-width: 481px) {
+  section {
+    background-position-y: 0%;
+  }
+}
+section h3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.partner {
+  width: 80%;
+}
+
+.slider {
+  width: 20%;
+}
+
+#a {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #6600ff;
+  color: white;
+}
+
+.carousel-item img {
+  border-radius: 50%;
+}
+
+.myC {
+  position: relative;
+  padding: 0;
+  background: url(../sfondo/sfondo.svg);
+  background-repeat: no-repeat;
+}
+.myC .part {
+  background: url(../sfondo/sfondo1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rec {
+  background-image: url(../sfondo/sfondo3.svg);
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
